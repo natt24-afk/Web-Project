@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>natt | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>natt</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#projects">Projects</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#contact">Contact</a></div>
+            </div>
+            <div class="theme-switch" data-aos="fade-down" data-aos-duration="1000">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </nav>
+
+        <div class="dropdown">
+            <div class="dropdown-links">
+                <a href="#home" onclick="cancel()">Home</a>
+                <a href="#about" onclick="cancel()">About</a>
+                <a href="#skills" onclick="cancel()">Skills</a>
+                <a href="#projects" onclick="cancel()">Projects</a>
+                <a href="#contact" onclick="cancel()">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="https://scontent.fceb6-3.fna.fbcdn.net/v/t39.30808-1/668519543_122097453236774195_6272885797828838116_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGnjAsv__u4OSD_TiUKWNINwAF9wT_-IT3AAX3BP_4hPc5_8_UFmCJdHhWM2CuDJixoSLXIze5HU3H4b1zOX4Ps&_nc_ohc=NsSa0eh0yqcQ7kNvwHIjmPo&_nc_oc=AdquZ9oHncd-IbYglDRhv5Z_AnmchOv2dwSqN40z0EAzIn9I9sAoSpsr-5Ji-Vu2V_A&_nc_zt=24&_nc_ht=scontent.fceb6-3.fna&_nc_gid=l-T8cRW5lO-raS30_u__eg&_nc_ss=7a3a8&oh=00_Af3x0PErsOqKTtx1eibyeJHTljiPYLB146CRdHAMxHaEOg&oe=69EA8C2D" alt="Nathaniel Ayopela Profile Picture">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Nathaniel Ayopela</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span class="typing-cursor"></span> </div>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">Junior IT Student & Aspiring Developer passionate about building innovative digital solutions.</p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p>I am a Junior IT student specializing in Systems Development. Throughout my studies, I have maintained a keen interest in the intersection of Web Technologies and User Experience. I recently completed projects focused on responsive design, which allowed me to apply theoretical concepts to practical environments. I am committed to continuous learning and professional growth within the field of technology.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">Technical Proficiencies</h2>
+                <div class="skills-grid">
+                    <div class="skill-card" data-skill="HTML5">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill-card" data-skill="CSS3">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill-card" data-skill="JavaScript">
+                        <i class="fa-brands fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card" data-skill="React">
+                        <i class="fa-brands fa-react"></i>
+                        <h3>React</h3>
+                    </div>
+                </div>
+                <div id="skill-detail" class="skill-detail-box">
+                    <p>Click a skill to see more details.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">Latest Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img" style="background: linear-gradient(45deg, #716496, #a394cc);"></div>
+                        <div class="project-info">
+                            <h3>Project One</h3>
+                            <p>Interactive web application built with modern frameworks.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img" style="background: linear-gradient(45deg, #434246, #716496);"></div>
+                        <div class="project-info">
+                            <h3>Project Two</h3>
+                            <p>Responsive portfolio design focusing on UX/UI best practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">Get In Touch</h2>
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+                <p id="form-status"></p>
+            </form>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="copyright">&copy; 2024 Nathaniel Ayopela. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0, duration: 1000 });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
